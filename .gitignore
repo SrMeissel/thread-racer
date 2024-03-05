@@ -32,3 +32,5 @@
 *.app
 /.vs
 /thread-racer/.vs/thread-racer
+/thread-racer/thread-racer/x64/Debug
+/thread-racer/x64/Debug

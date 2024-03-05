@@ -2,10 +2,30 @@
 //
 
 #include <iostream>
+#include <vector>
+
+#include "PodRacer.hpp"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int length = 100;
+
+	//create racers
+	std::vector<PodRacer> podRacers;
+	podRacers.push_back(PodRacer("anakin"));
+
+	bool finished = false;
+	while (!finished) {
+		for (int i = 0; i < podRacers.size(); i++) {
+			podRacers[i].update();
+			std::cout << podRacers[i].getName() << " is at: " << podRacers[i].getPosition() << "\n";
+			if (podRacers[i].getPosition() >= length) {
+				finished = true;
+				std::cout << "race finished \n";
+			}
+		}
+	}
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
