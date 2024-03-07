@@ -23,5 +23,8 @@
     <ClInclude Include="PodRacer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SerialRace.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

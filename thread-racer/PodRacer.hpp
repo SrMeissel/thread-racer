@@ -6,9 +6,10 @@
 
 class PodRacer {
 public:
-	PodRacer(std::string name) : name(name) {
+	PodRacer(std::string name, int seed) : name(name) {
 		//ensure speed > 0
-		std::srand(time(0));
+		//casting objects memory location to int because all racers are created at practically the same time.
+		std::srand((unsigned)time(NULL) + seed);
 		speed = std::rand() % 10 + 1;
  	}
 
@@ -16,7 +17,7 @@ public:
 		position += speed;
 	}
 
-	int const getPosition() { return position; }
+	int getPosition() const { return position; }
 	std::string getName() { return name; }
 
 private:
