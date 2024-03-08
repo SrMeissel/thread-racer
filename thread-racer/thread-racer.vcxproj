@@ -130,6 +130,7 @@
     <ClCompile Include="thread-racer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ParallelRace.hpp" />
     <ClInclude Include="SerialRace.hpp" />
     <ClInclude Include="PodRacer.hpp" />
   </ItemGroup>
