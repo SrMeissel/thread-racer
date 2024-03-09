@@ -5,6 +5,7 @@
 #include <string>
 
 #include "SerialRace.hpp"
+#include "ParallelRace.hpp"
 
 int main()
 {
@@ -15,6 +16,9 @@ int main()
 
 		if (reply == "S") {
 			SerialRace podRace(100);
+		}
+		else if (reply == "P") {
+			ParallelRace podRace(100);
 		}
 		else {
 			std::cout << "what? \n";
